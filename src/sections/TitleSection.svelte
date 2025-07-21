@@ -1,8 +1,8 @@
 <script>
     import TitleCard from "../lib/TitleCard.svelte";
     
-    const title = "Welcome to the KWK Scrollytelling Template";
-    const subtitle = "A journey through data, creativity, and code";
+    const title = "Racial Disparities in Broadband Internet Access";
+    const subtitle = "An exploration into digital redlining in the United States.";
 </script>
 
 <TitleCard {title} {subtitle} />

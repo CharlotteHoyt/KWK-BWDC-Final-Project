@@ -16,10 +16,14 @@
 
 <style>
     .wrapper {
-        background-color: #f7f5eb;
+        /*background-color: #f7f5eb;*/
+        /*background-color: #F3F3E0;*/
+        background-color: #27548A;
         padding: min(100vh, 30rem) 1rem;
         border-style: solid;
-        border-color: #4096fa;
+        /*border-color: #4096fa;*/
+        /*border-color: #F3F3E0;*/
+        border-color: #27548A;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -52,8 +56,8 @@
         top: 50vh;
         transform: translateY(-50%);
         display: flex;
-        align-items: center;
-        justify-content: center;
+        /*align-items: center;
+        justify-content: center;*/
         z-index: 0;
     }
 

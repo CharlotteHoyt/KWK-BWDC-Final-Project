@@ -74,53 +74,40 @@
 <div>
     <Scroller layout="left">
         {#snippet sticky()}
-            <div class="chart">
+            <!--<div class="chart">
                 <Chart bind:chart {options} highcharts={Highcharts} />
             </div>
             <button on:click={toggleThirdSeries} class="toggle-button">
                 {thirdSeriesVisible ? "Remove Group 3" : "Add Group 3"}
-            </button>
+            </button>-->
             <div>
-                <p>
-                    You can use Svelte to add and remove data from a Highcharts
-                    chart.
-                </p>
-                <p>
-                    When you click the button above, a third group is toggled in
-                    the chart. Check out the source code to see how it's done.
-                </p>
-                <p>
-                    <strong
-                        >🤔 How might you use other HTML elements, like
-                        checkboxes or radio buttons, in a similar way to filter
-                        data?</strong
-                    >
-                </p>
+                <h1>What the Data Reveals</h1>
+                <p>Digital redlining is incredibly harmful and perpetuates inequities.</p>
+                <p>Racial disparities exist in broadband access, limiting opportunity and hindering access.</p>
+                <!--<p>Some areas with larger Black population percentages appear to also have a lower percentage of households with broadband internet subscriptions.</p>-->
+                <p>I looked into the issue of race and broadband internet access by exploring data and visualizations from the <a href="https://blackwealthdata.org" target="_blank">Black Wealth Data Center</a>, and I invite you to do the same! To the side, I have shared some of my discoveries!</p>
             </div>
         {/snippet}
 
         {#snippet scrolly()}
             <ArticleText>
-                You might notice that this basic template doesn't have certain
-                features that are common in scrollytelling.
+                <strong class="articleTextHeader">Key Takeaway 1</strong>
+                <p class="articleTextCaption">The three counties with the highest Black population percentages (Claiborne County, Holmes County, and Greene County) are also all in the bottom 25% of geographies as it pertains to the percentage of households with broadband internet access.</p>
             </ArticleText>
 
             <ArticleText>
-                For example, you might want a component that doesn't feature a
-                sticky component at all. Or a component that is solely a sticky
-                component.
+                <strong class="articleTextHeader">Key Takeaway 2</strong>
+                <p class="articleTextCaption">The southeastern United States, which has a large and historically significant Black population compared to other regions, has many counties with a lower percentage of households with broadband internet access.</p>
             </ArticleText>
 
             <ArticleText>
-                You might also want to add more interactivity or gamify parts of
-                your scrollytelling piece.
+                <strong class="articleTextHeader">Key Takeaway 3</strong>
+                <p class="articleTextCaption">Many localities in Mississipi and Alabama with Black populations over 70% lack access to broadband.</p>
             </ArticleText>
 
             <ArticleText>
-                <strong>
-                    It's up to you to research how to create the effects and
-                    functionality that you envision!
-                </strong>
+                <strong class="articleTextHeader">Key Takeaway 4</strong>
+                <p class="articleTextCaption">Cities and more populated regions generally have better access to/higher avalibility of broadband than rural areas.</p>
             </ArticleText>
         {/snippet}
     </Scroller>
@@ -149,4 +136,56 @@
         transform: translateY(2px);
         box-shadow: 0 2px 0 #007052;
     }
+
+    /*p {
+        color: #F3F3E0;
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 500;
+    }
+
+     a {
+        color: #DDA853;
+     }*/
+
+     p {
+        color: #F3F3E0;
+        /*font-family: "Inter Tight", sans-serif;*/
+        font-family: "Inclusive Sans", sans-serif;
+        font-weight: 500;
+
+        font-size: 1.3rem;
+    }
+
+     a {
+        color: #DDA853;
+     }
+
+     h1 {
+        color: #DDA853;
+        /*font-size: 2.5rem;*/
+        font-size: 3em;
+        font-family: "Contrail One", sans-serif;
+        margin-bottom: -.25em;
+     }
+
+     .articleTextHeader {
+        color: #DDA853;
+        font-family: "Contrail One", sans-serif;
+        font-size: 1.7rem;
+     }
+
+     .articleTextCaption {
+        margin-top: 0em;
+     }
+
+     .scrollerBoxImage {
+        height: 200px;
+        margin: auto;
+        display: block;
+     }
+
+     .imageCaption {
+        font-size: .8em;
+        text-align: center;
+     }
 </style>
