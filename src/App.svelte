@@ -1,4 +1,14 @@
 <script>
+  import { onMount } from 'svelte';
+    onMount(() => {
+      var divElement = document.getElementById('viz1753141259368');                    
+      var vizElement = divElement.getElementsByTagName('object')[0];                    
+      vizElement.style.width='1244px';vizElement.style.height='727px';                    
+      var scriptElement = document.createElement('script');                    
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);    
+    });
+
   import LeftAlignedExample from "./sections/LeftAlignedExample.svelte";
   import RightAlignedExample from "./sections/RightAlignedExample.svelte";
   import ImageExample from "./sections/ImageExample.svelte";
@@ -21,6 +31,52 @@
   <IntersectionObserverAlertExample />
   <DisappearingDuckExample />
   <IntersectionObserverListExample />-->
+
+  <h1 class="center">Check Out the Visualization!</h1>
+  <br>
+  
+  <div class='tableauPlaceholder' id='viz1753141259368' style='position: relative'>
+    <noscript>
+      <a href='#'>
+        <img alt='Map: Internet Subscriptions ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BW&#47;BWDC-EducationEmployment-InternetSubscriptions&#47;MapInternetSubscriptions&#47;1_rss.png' style='border: none' />
+      </a>
+    </noscript>
+    <object class='tableauViz'  style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+      <param name='embed_code_version' value='3' /> 
+      <param name='site_root' value='' />
+      <param name='name' value='BWDC-EducationEmployment-InternetSubscriptions&#47;MapInternetSubscriptions' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BW&#47;BWDC-EducationEmployment-InternetSubscriptions&#47;MapInternetSubscriptions&#47;1.png' /> 
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+      <param name='origin' value='viz_share_link' />
+      <param name='filter' value='padding=0' />
+      <param name='filter' value='position=relative' />
+    </object>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
   <div class="section">
     <h1>Community Connections</h1>
@@ -79,7 +135,6 @@
 <style>
   .section {
     width: 90%;
-    /*margin-top: -300px;*/
     margin-right: auto;
     margin-left: auto;
   }
@@ -88,8 +143,6 @@
     font-size: 3rem;
     margin: 0;
     color: #DDA853;
-    /*text-shadow: 1px 1px 0 #007052;*/
-
     font-family: "Contrail One", sans-serif;
     margin-bottom: -.25em;
   }
@@ -98,10 +151,7 @@
     font-size: 1.3rem;
     color: #F3F3E0;
     margin-top: 1rem;
-
-    /*font-family: "Inter Tight", sans-serif;*/
     font-family: "Inclusive Sans", sans-serif;
-
     font-weight: 500;
   }
 
@@ -112,12 +162,10 @@
   .content {
     margin-right: auto;
     margin-left: auto;
-
     max-width: 700px;
     background-color: #27548A;
     padding: 2rem;
     border: 6px solid #DDA853;
-    /*border-radius: 2rem;*/
     box-shadow: 16px 16px #183B4E;
   }
 
@@ -135,10 +183,20 @@
     font-size: 1.3rem;
     color: #F3F3E0;
     margin-top: 1rem;
-
-    /*font-family: "Inter Tight", sans-serif;*/
     font-family: "Inclusive Sans", sans-serif;
-
     font-weight: 500;
+  }
+
+  .tableauPlaceholder {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    border: 6px solid #DDA853;
+    box-shadow: 16px 16px #183B4E;
+ }
+
+  .center {
+    text-align: center;
   }
 </style>

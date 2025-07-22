@@ -83,7 +83,7 @@
             <p>Broadband (short for "broad bandwidth") provides high-speed internet access and is extremely important for modern life.</p>
             <p>In today's world, broadband is no longer seen as a luxury. Many consider broadband a basic, essential service comparable to water and electricity.</p>
             <p>Broadband is vitally important for full participation in the digital age. In the United States, there is not universal access to broadband, fueling a digital divide.</p>
-            <p>Learn more about the necessity of broadband internet by scrolling down the page. →</p>
+            <p>Learn more about the necessity of broadband internet by scrolling down the page.</p>
         {/snippet}
 
         {#snippet scrolly()}
@@ -138,7 +138,6 @@
 
     p {
         color: #F3F3E0;
-        /*font-family: "Inter Tight", sans-serif;*/
         font-family: "Inclusive Sans", sans-serif;
         font-weight: 500;
 
@@ -151,7 +150,6 @@
 
      h1 {
         color: #DDA853;
-        /*font-size: 2.5rem;*/
         font-size: 3em;
         font-family: "Contrail One", sans-serif;
         margin-bottom: -.25em;

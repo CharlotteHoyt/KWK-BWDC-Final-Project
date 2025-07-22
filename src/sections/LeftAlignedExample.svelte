@@ -84,7 +84,6 @@
                 <h1>What the Data Reveals</h1>
                 <p>Digital redlining is incredibly harmful and perpetuates inequities.</p>
                 <p>Racial disparities exist in broadband access, limiting opportunity and hindering access.</p>
-                <!--<p>Some areas with larger Black population percentages appear to also have a lower percentage of households with broadband internet subscriptions.</p>-->
                 <p>I looked into the issue of race and broadband internet access by exploring data and visualizations from the <a href="https://blackwealthdata.org" target="_blank">Black Wealth Data Center</a>, and I invite you to do the same! To the side, I have shared some of my discoveries!</p>
             </div>
         {/snippet}
@@ -137,19 +136,8 @@
         box-shadow: 0 2px 0 #007052;
     }
 
-    /*p {
-        color: #F3F3E0;
-        font-family: "Inter Tight", sans-serif;
-        font-weight: 500;
-    }
-
-     a {
-        color: #DDA853;
-     }*/
-
      p {
         color: #F3F3E0;
-        /*font-family: "Inter Tight", sans-serif;*/
         font-family: "Inclusive Sans", sans-serif;
         font-weight: 500;
 
@@ -162,7 +150,6 @@
 
      h1 {
         color: #DDA853;
-        /*font-size: 2.5rem;*/
         font-size: 3em;
         font-family: "Contrail One", sans-serif;
         margin-bottom: -.25em;
@@ -176,16 +163,5 @@
 
      .articleTextCaption {
         margin-top: 0em;
-     }
-
-     .scrollerBoxImage {
-        height: 200px;
-        margin: auto;
-        display: block;
-     }
-
-     .imageCaption {
-        font-size: .8em;
-        text-align: center;
      }
 </style>
